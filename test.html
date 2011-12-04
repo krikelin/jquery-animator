@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery animation example</title>
+		<script src="jquery-1.7.min.js" language="javascript"></script>
+		<script src="jsanimator-1.6.1js" language="javascript"></script>
+		<script language="javascript">
+			$(document).ready(function(){
+				var story = new Scene(16000);
+				// Add object 1 to storyboard
+				story.addObject("#object1");
+				
+				// add event
+				story.addEvent("#object1", {
+					'left': '320'
+				},3,10);
+				
+			});
+			
+	</head>
+	<body>
+		<div id="object1">Test</div>
+		
+	</body>
+</html>
